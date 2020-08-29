@@ -1,0 +1,131 @@
+body{
+	padding:0;
+	margin: 0;
+	font : 15px/1.5 'Poiret One', cursive;
+	background-color: #f4f4f4;
+}
+/** container **/
+.container{
+	width:80%;
+	overflow: hidden;
+	margin:auto;
+}
+
+.button-1{
+    height: 38px;
+    background: #e8491d;
+    border :0;
+    border-radius: 300px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #ffffff;
+    font-weight: 70px;
+    border-color: #F05F44;
+    border-width: 5px;
+}
+button a{
+		text-decoration: none;
+	color: white;
+}
+
+/** header **/
+header{
+	background: #35424a;
+	color: #ffffff;
+	padding-top: 30px;
+	min-height: 70px;
+	border-bottom:  #e8491d 6px solid;
+}
+
+.highlight{
+	color:  #ee4b08;
+}
+
+
+h1{
+	text-align: center; 
+} 
+
+
+.cont{
+    min-height: 500px;
+    background: url('../img/lapic2.jpg') no-repeat 0;
+    background-size: cover;
+    color: whitesmoke
+    }
+
+#newsletter{ 
+padding: 15px;
+    color: white;
+    background: #35424a;
+}
+
+#newsletter h1{
+float:left;
+color: #ee4b08;
+}
+#newsletter form{
+    float:right;
+    margin-top: 15px;
+}
+#newsletter input[type="email"]{
+    padding:4px;
+    height:25px;
+    width:250px;
+ }
+
+ #newsletter .box{
+ 	float: right;
+ 	text-align: center;
+ 	text-decoration: #ee4b08;
+ }
+
+   #newsletter .media{
+   	float: left;
+   }
+
+h4 a{
+   color: black;
+   text-decoration: none; 
+}
+.box h4{
+	padding: 0 20px 30px 20px;
+	color: black;
+}
+
+.bounce{
+	animation: bounce 2s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes bounce {
+  0%,
+  25%,
+  50%,
+  75%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-20px);
+  }
+  60% {
+    transform: translateY(-12px);
+  }
+}
+
+
+    /** media queries **/
+
+    @media(max-width: 768px){
+    	header,
+    	#newsletter,
+    	#newsletter form{
+    		float: none;
+    		text-align: center;
+    		width: 100%;
+    	}
+    	#newsletter h1{
+    		margin-bottom: 15px;
+    	}
+    }
